@@ -1,14 +1,12 @@
 import React from 'react';
 
-var App = React.createClass({
-    displayname:'App',
-    render(){
-            var bemStyle = 
-                {
-         border: '1px dashed #ccc',
+class App extends React.Component {
+   render() {
+    var bemStyle = {
+         border: '1px solid red',
          padding: '30px',
          color: '#666'
-                }
+      }
        
       return (
          <div style={bemStyle}>
@@ -16,8 +14,7 @@ var App = React.createClass({
             <p>{this.props.children}</p>
          </div>
       );
-    }
-
-});
+   }
+}
 
 export default App;
